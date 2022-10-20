@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  color: #383e45;
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-size: 0.9rem;
+}
+
+a {
+  text-decoration: none;
+  color: #24292e;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.section__title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.content__title {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto 100px;
+  padding: 0 4%;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header__title {
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0px;
+}
+.header__logo {
+  display: block;
+}
+.header ul {
+  display: flex;
+  padding: 10px 0;
+}
+.header ul li {
+  margin-left: 30px;
+}
+.header ul li a:hover {
+  opacity: 0.7;
+}
+
+.mainvisual {
+  margin-bottom: 80px;
+}
+.mainvisual img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profile__text {
+  text-align: left;
+}
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.photo ul {
+  display: flex;
+  justify-content: space-between;
+}
+.photo li {
+  width: 32%;
+}
+.photo__list {
+  object-fit: cover;
+}
+.photo__list img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#gotoTop {
+  position: fixed;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 30px;
+  padding: 10px 16px;
+  font-size: 1.5rem;
+  background: rgba(228, 211, 211, 0.36);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mainvisual img {
+    height: calc(100vh - 60px);
+  }
+  .profile__content {
+    flex-direction: column;
+  }
+  .profile img {
+    margin-right: 0;
+  }
+  .photo ul {
+    flex-direction: column;
+  }
+  .photo li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
