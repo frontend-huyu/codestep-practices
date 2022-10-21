@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+$font-color: #333;
+$font-size: 16px;
+$font-stack: 'Noto Serif JP', serif;
+
+@function interval20px($multiple) {
+  @return 20 * $multiple;
+}
+
+html {
+  font-size: $font-size;
+  font-family: $font-stack;
+}
+
+body {
+  background-color: #f4f9ff;
+  color: $font-color;
+  font-size: 0.875rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.index__title .detail__title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: interval20px(0.5) * 1px;
+}
+
+.header {
+  margin-top: interval20px(3) * 1px;
+
+  &__title {
+    width: 160px;
+    // eliminate h1 tag space
+    line-height: 0px;
+    margin-bottom: 15px;
+  }
+}
+
+.mainvisual {
+  margin-bottom: interval20px(3) * 1px;
+}
+
+.index {
+  background-color: #fff;
+  padding: 30px 0;
+  margin-bottom: interval20px(3) * 1px;
+
+  &__list {
+    margin-left: interval20px(1) * 1px;
+
+    li {
+      margin-bottom: interval20px(1) * 1px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.detail {
+  margin-bottom: interval20px(5) * 1px;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 20
+    }
+
+    &__image {
+      width: 270px;
+      margin-right: interval20px(3) * 1px;
+    }
+
+    &__text--title {
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    &__text {
+      p {
+        margin-bottom: interval20px(1) * 1px;
+      }
+
+      dl {
+        // row
+        display: flex;
+        // when dt/dd tags is over 100%, wrap onto multiple lines
+        flex-wrap: wrap;
+        padding: 16px 0;
+        margin-bottom: 25px;
+        border-top: solid 1px #dedede;
+        border-bottom: solid 1px #dedede;
+      }
+
+      dt {
+        width: 25%;
+      }
+
+      dd {
+        width: 75%;
+      }
+
+      .link:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.footer {
+  font-size: 0.875rem;
+  padding: 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .header {
+    padding: 0 10px;
+  }
+
+  .mainvisual {
+    padding: 0 10px;
+  }
+
+  .detail__content {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+      margin: 0 0 25px 0;
+    }
+  }
+}
