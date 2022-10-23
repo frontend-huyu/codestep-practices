@@ -3,6 +3,7 @@
 $font-primary: 'Helvetica Neue', 'Arial', 'Hiragino Sans', 'Meiryo', sans-serif;
 $font-size: 16px;
 $font-color-primary: #2b2a27;
+$border-color: #ccc;
 
 html {
   scroll-behavior: smooth;
@@ -83,6 +84,74 @@ a {
   }
 }
 
+.recipe {
+  display: flex;
+  margin-bottom: 60px;
+
+  &__photo {
+    width: 49%;
+
+    img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      // vertical-align: bottom;
+    }
+  }
+
+  &__content {
+    width: 49%;
+    padding: 40px 5% 0 5%;
+
+    &__page--title {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      &--title {
+        border-bottom: solid 1px $border-color;
+        font-size: 1.25rem;
+        padding-bottom: 5px;
+        margin: 40px 0 15px 0;
+      }
+
+      &--list {
+        display: flex;
+        flex-wrap: wrap;
+
+        dt {
+          width: 85%;
+          border-bottom: dotted 1px $border-color;
+          padding: 6px 0;
+        }
+
+        dd {
+          width: 15%;
+          border-bottom: dotted 1px $border-color;
+          padding: 6px 0;
+          text-align: right;
+        }
+
+        li {
+          width: 100%;
+          border-bottom: dotted 1px $border-color;
+          padding: 6px 0;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
 footer {
   font-size: 0.75rem;
   padding: 20px;
@@ -114,6 +183,34 @@ footer {
 
     img {
       width: 100%;
+    }
+  }
+
+  .recipe {
+    flex-direction: column;
+
+    &__photo {
+      width: 100%;
+
+      img {
+        height: auto;
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+
+  .photo__content--text {
+    display: flex;
+    flex-direction: column;
+
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
     }
   }
 }
