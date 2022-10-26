@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My practice from https://code-step.com/portfolio1-menu/">
+  <title>My work - Portfolio</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/be2a839ec3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="index">
+    <div class="index">
+      <h1 class="index__title">
+        <a href="index.html"><img src="images/logo.svg" alt="My work logo"></a>
+      </h1>
+
+      <nav>
+        <ul class="internal__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main__visual">
+      <picture>
+        <source media="(max-width: 768px)" srcset="images/mainvisual-sp.jpg">
+        <img src="images/mainvisual-pc.jpg" alt="main visual photo">
+      </picture>
+    </div>
+
+    <section id="about">
+      <div class="section wrapper">
+        <h2 class="section__title">
+          About
+        </h2>
+        <ul>
+          <li>Xxxxx Ashley</li>
+          <li>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</li>
+          <li>tel: 000-0000-0000</li>
+          <li>url: www.xxxxxx.jp</li>
+          <li>mail: xxx@xxxxxx.jp</li>
+        </ul>
+        <p>
+          プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="section wrapper">
+        <h2 class="section__title">
+          Works
+        </h2>
+        <ul>
+          <li><img src="images/works/work1.jpg" alt="works photo 1"></li>
+          <li><img src="images/works/work2.jpg" alt="works photo 2"></li>
+          <li><img src="images/works/work3.jpg" alt="works photo 3"></li>
+          <li><img src="images/works/work4.jpg" alt="works photo 4"></li>
+          <li><img src="images/works/work5.jpg" alt="works photo 5"></li>
+          <li><img src="images/works/work6.jpg" alt="works photo 6"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="section wrapper">
+        <h2 class="section__title">
+          News
+        </h2>
+        <dl>
+          <dt>2020.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+          <dt>2020.XX.XX</dt>
+          <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+          <dt>2019.XX.XX</dt>
+          <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section wrapper">
+        <h2 class="section__title">
+          Contact
+        </h2>
+        <form action="#" method="post">
+          <dl>
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="email" id="email" name="your-email"></dd>
+            <dt><label for="message">MESSAGE</label></dt>
+            <dd><textarea name="your-message" id="message"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Go to Top/End -->
+    <div class="goto">
+      <a href="#index">
+        <div class="top">
+          <i class="fa-solid fa-angles-up"></i>
+        </div>
+      </a>
+      <a href="#footer">
+        <div class="end">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="footer">
+      <p>&copy; 2022 My Work</p>
+    </div>
+  </footer>
+</body>
+
+</html>
