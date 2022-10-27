@@ -1,0 +1,259 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.875rem;
+  color: #2a2a2a;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.wrapper .section__title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.wrapper .btn {
+  border: solid 1px #2a2a2a;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 14px 36px;
+  margin: 30px;
+}
+
+#index {
+  background-image: url("../images/main-visual.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin-bottom: 80px;
+  position: relative;
+}
+#index .index__title {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#magazine {
+  text-align: center;
+  margin-bottom: 80px;
+}
+#magazine .section__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#magazine .section__content__item {
+  width: 49%;
+  position: relative;
+}
+#magazine .section__content__item--text {
+  max-width: 290px;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+#magazine .section__content__item--text .title {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+#fashion {
+  height: 520px;
+  background-image: url("../images/fashion.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+
+#catalog,
+#antique {
+  background-color: #f5f5f5;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+#catalog .section__content__item,
+#antique .section__content__item {
+  width: 48%;
+  text-align: center;
+}
+#catalog .section__content__item .section__title,
+#antique .section__content__item .section__title {
+  margin-bottom: 40px;
+}
+#catalog .section__content__item img,
+#antique .section__content__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#catalog .section__content__item p,
+#antique .section__content__item p {
+  margin-bottom: 30px;
+  text-align: left;
+}
+#catalog .section__content__item p:last-child,
+#antique .section__content__item p:last-child {
+  margin-bottom: 0;
+}
+
+#goto {
+  cursor: pointer;
+  z-index: 1000;
+}
+#goto .top,
+#goto .end {
+  padding: 10px 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+}
+#goto .top .fa-solid,
+#goto .end .fa-solid {
+  color: #fff;
+}
+#goto .top {
+  right: 20px;
+  bottom: 90px;
+}
+#goto .end {
+  right: 20px;
+  bottom: 30px;
+}
+
+#footer {
+  background-color: #333;
+  font-size: 0.875rem;
+}
+#footer .section__content {
+  display: flex;
+  justify-content: space-between;
+  color: #f5f5f5;
+  padding: 100px;
+}
+#footer .section__content__item {
+  width: 33%;
+  line-height: 2;
+}
+#footer .section__content__item:first-child {
+  padding: 60px 0;
+}
+#footer .section__content__item .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#footer .section__content__item li::before {
+  content: "-";
+  margin-right: 5px;
+}
+#footer .sns {
+  display: flex;
+  justify-content: center;
+}
+#footer .sns li {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+#footer .sns li .fa-brands {
+  font-size: 2rem;
+  color: #f5f5f5;
+}
+#footer .sns li:last-child {
+  margin-right: 0;
+}
+#footer .copyright {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  #magazine {
+    margin-bottom: 50px;
+  }
+  #magazine .section__content {
+    flex-direction: column;
+  }
+  #magazine .section__content__item {
+    width: 100%;
+  }
+  #magazine .section__content__item:first-child {
+    margin-bottom: 30px;
+  }
+  #fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
+  }
+  #catalog,
+#antique {
+    padding: 30px;
+    flex-direction: column;
+  }
+  #catalog .section__content__item,
+#antique .section__content__item {
+    width: 100%;
+  }
+  #catalog .section__content__item .section__title,
+#antique .section__content__item .section__title {
+    margin-top: 20px;
+  }
+  #catalog .section__content__item:first-child,
+#antique .section__content__item:first-child {
+    margin-bottom: 60px;
+  }
+  #antique {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #footer .section__content {
+    flex-direction: column;
+    padding: 30px;
+  }
+  #footer .section__content__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #footer .section__content__item:first-child {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
